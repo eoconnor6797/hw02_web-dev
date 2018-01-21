@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Task 1</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1 id="counter">10</h1>
+<button onclick="alert(document.getElementById('counter').innerHTML)">this is a button</button>
+<button onclick="increment('counter')">increment</button>
+<script> function increment(id) {
+	var xx = parseInt(document.getElementById(id).innerHTML);
+	document.getElementById(id).innerHTML = xx + 1;
+}
+</script>
+<button onclick="append()">append</button>
+<script>
+function append() {
+	var p = document.createElement("p");
+	var n = document.createTextNode(document.getElementById('counter').innerHTML);
+	p.appendChild(n);
+	document.getElementById('paragraphs').appendChild(p);
+}
+</script>
+<div id="paragraphs"> </div>
+</body>
+</html>

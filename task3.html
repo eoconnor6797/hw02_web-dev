@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Task 3</title>
+        <meta charset="UTF-8">
+        <style>
+.header {
+    text-align: center;
+    font-size: 100%;
+}
+.left {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.right {
+    float: right;
+    width: 66.66%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>HW02 Task Three</h1>
+        </div>
+        <div class="left">
+            <a href="#" onclick="lorem();">Lorem Ipsem</a>
+            <br><br>
+            <a href="#" onclick="bottles()">99 Bottles</a>
+            <br><br>
+            <a href="#" onclick="last()">Last thing</a>
+        </div>
+        <div class="right">
+            <div id="lorem" style="inline">
+                <!--Lorem Ipsum Paragraphs taken from https://www.lipsum.com/feed/html -->
+                <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis posuere porttitor. Etiam quis volutpat tortor, mattis dictum nunc. Nam nisl arcu, tincidunt placerat efficitur id, finibus vel orci. Nullam at magna quis lorem finibus venenatis. Proin id tempor dui, semper finibus est. Duis malesuada nisl sit amet lacus eleifend, sit amet dapibus lorem scelerisque. Vivamus fringilla, neque id laoreet interdum, turpis eros pharetra nulla, id eleifend felis augue sit amet justo. Donec in leo at urna interdum tristique. Nulla sed ipsum nisi. Integer tempor sodales risus, sit amet dictum leo.</a>
+                <p>Praesent pharetra dui risus, ullamcorper placerat enim posuere et. Maecenas varius eleifend arcu, in dictum lacus suscipit ut. Aenean tortor ipsum, maximus consectetur nisi vitae, ullamcorper vulputate tellus. Nam sed gravida ligula. Sed sit amet quam eleifend, commodo dui nec, maximus magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec fermentum risus at vehicula condimentum. Ut auctor sapien a dui suscipit ornare. Aliquam lobortis purus magna, in bibendum orci venenatis id. Cras venenatis eget quam non luctus.</p>
+                <p>Sed vel dui nulla. Aenean et massa ac ex tempor tempus sit amet eget neque. Maecenas sollicitudin arcu ac ultricies faucibus. Sed bibendum hendrerit libero, sed tristique quam elementum sed. Nulla facilisi. In rhoncus ante in dictum rutrum. Vivamus tempus, dolor ac placerat fermentum, risus felis malesuada tortor, in rutrum ipsum est at arcu. Duis non semper velit. Vestibulum malesuada, sem luctus dapibus dapibus, lorem urna dictum tellus, et pretium leo augue eget nunc.</p>
+                <p>Ut vitae sapien lectus. Ut vel rutrum lectus, non vulputate est. Pellentesque non tincidunt est. Praesent at luctus nibh, vitae blandit mauris. Nulla ac sapien sit amet metus posuere mollis. Vestibulum et ex nec erat scelerisque tristique. Quisque tortor lorem, condimentum nec luctus id, consequat id quam. Maecenas ornare tortor ut arcu interdum mattis. Mauris eu tincidunt eros. Proin hendrerit vestibulum sapien, nec efficitur purus tincidunt et. Curabitur velit sapien, egestas quis nisi non, tincidunt pellentesque tellus. Nam eget massa ut nisi dapibus auctor nec eget nisl.</p>
+            </div>
+            <div id="bottles" style="display:none">
+                <a>99 bottles of beer on the wall, 99 bottles of beer.</a>
+                <br>
+                <a>Take one down, pass it around, 98 bottles of beer on the wall</a>
+                <br>
+                <br>
+                <a>99 bottles of beer on the wall, 99 bottles of beer.</a>
+                <br>
+                <a>Take one down, pass it around, 98 bottles of beer on the wall</a>
+                <br>
+                <br>
+                <a>99 bottles of beer on the wall, 99 bottles of beer.</a>
+                <br>
+                <a>Take one down, pass it around, 98 bottles of beer on the wall</a>
+                <br>
+                <br>
+                <a>99 bottles of beer on the wall, 99 bottles of beer.</a>
+                <br>
+                <a>Take one down, pass it around, 98 bottles of beer on the wall</a>
+            </div>
+            <div id="third" style="display:none">
+                <a>This is the third thing</a>
+            </div>
+            <script>
+                function bottles() {
+                    var l = document.getElementById('lorem');
+                    var b = document.getElementById('bottles');
+                    var t = document.getElementById('third');
+                    l.style.display = "none";
+                    b.style.display = "inline";
+                    t.style.display = "none";
+                }
+
+                function lorem() {
+                    var l = document.getElementById('lorem');
+                    var b = document.getElementById('bottles');
+                    var t = document.getElementById('third');
+                    l.style.display = "inline";
+                    b.style.display = "none";
+                    t.style.display = "none";
+                }
+
+                function last() {
+                    var l = document.getElementById('lorem');
+                    var b = document.getElementById('bottles');
+                    var t = document.getElementById('third');
+                    l.style.display = "none";
+                    b.style.display = "none";
+                    t.style.display = "inline";
+                }
+            </script>
+        </div>
+    </body>
+</html>
